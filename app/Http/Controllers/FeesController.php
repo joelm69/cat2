@@ -12,10 +12,10 @@ class FeesController extends Controller
     public function insertFees(Request $request){
 
         $request->validate([
-        'studentid' => 'required|integer|max:10',
+        'studentid' => 'required|integer|max:999999',
         'accname'=> 'required',
-        'accnumber'=> 'required|integer|max:20',
-        'amount'=> 'required|integer|max:10',
+        'accnumber'=> 'required',
+        'amount'=> 'required|integer|max:10000000',
         'method'=> 'required'
         ]);
 
