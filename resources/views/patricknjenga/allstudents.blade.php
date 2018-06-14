@@ -16,12 +16,10 @@
 		<table class="table table-striped">
 			<tr class="thead-dark">
 				<th>Student ID</th>
-				<th>Account Name</th>
-				<th>Account Number</th>
-				<th>Amount</th>
-				<th>Method</th>
-				<th>View Payments</th>
-			</tr>
+				<th>Student Name</th>
+				<th>Course</th>
+				<th>Induction Year</th>
+				<th>Completion Year</tr>
 			@foreach($table as $data)
 			<tr>
 				<td>{{$data->id}}</td>

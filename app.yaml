@@ -1,4 +1,5 @@
 runtime: php  # language of the app
+env: flex
 
 runtime_config:
  document_root: public   #folder where index.php is
@@ -28,16 +29,8 @@ env_variables:
  DB_DATABASE: schoolfees
  DB_USERNAME: 093237
  DB_PASSWORD: 093237
- DB_SOCKET: /cloudsql/laravel-93237:us-central1:laravel-93237
+
 
  QUEUE_DRIVER: database #in case you execute queued jobs
 
  LOG_DELETE:  true # this is a parameter added by us in the project .env file. You can add here any setting you would add to your .env file
-
- GOOGLE_VISION_PROJECT_ID : project_id
-
-#we need this for the flex environment
-beta_settings:
-   # for Cloud SQL, set this value to the Cloud SQL connection name,
-   # e.g. "project:region:cloudsql-instance"
-   cloud_sql_instances: laravel-93237:us-central1:laravel-93237
