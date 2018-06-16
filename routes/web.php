@@ -22,5 +22,6 @@ Route::get('/allstudents', "StudentController@getAllStudents");
 Route::get('/fees', 	"StudentController@create");
 
 Route::get('/history/{id}', "FeesController@getHistory");
+Route::get('/history', "FeesController@getStudent");
 Route::post('/student', "StudentController@insertStudent");
 Route::post('/fees', 	"FeesController@insertFees");

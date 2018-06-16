@@ -34,4 +34,16 @@ class FeesController extends Controller
         $table=Fees::all()->where('studentid', $id);
         return view('patricknjenga.history')->with('table',$table);
     }
+
+    public function getStudent(){
+        $table=Fees::all()->where('studentid', request('id'));
+        $count=Student::all()->where('id', request('id'))->count();
+
+        if($count>0) {    
+            return view('patricknjenga.history')->with('table',$table);
+        }else {
+            return redirect('/')->with('status', 'Student Does Not Exist!');
+        }
+    }
+    
 }
