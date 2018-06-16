@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<br>
-			<div class="col-sm-6s pb-2 mx-auto text-center " >
+			<div class="col-sm-6 pb-2 mx-auto text-center " >
 				<input type="text " class="form-control " name="id" placeholder="Search for student " style="text-align: center;">
 			</div>
 			<div class="form row container ">
